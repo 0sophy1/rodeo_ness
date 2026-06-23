@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rodeo_ness"
+version = "0.1.0"
+description = "Rodeo-algorithm steady-state preparation for open quantum systems"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Hyeonjun Yeo" },
+    { name = "Jongin Jeong" },
+    { name = "Soyoung Shin" },
+    { name = "Ha Eum Kim" },
+]
+keywords = [
+    "quantum computing",
+    "open quantum systems",
+    "rodeo algorithm",
+    "steady state",
+    "Lindblad",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+    "matplotlib>=3.4",
+]
+
+[project.optional-dependencies]
+# Circuit-level validation notebook (Appendix E)
+circuit = [
+    "qiskit>=1.0",
+    "qiskit-aer>=0.13",
+    "pylatexenc>=2.10",   # circuit .draw("mpl") in Figs. 6-7
+]
+# Building / running the documentation notebooks
+docs = [
+    "jupyter",
+    "nbconvert",
+    "nbformat",
+]
+# Test suite
+test = [
+    "pytest>=7.0",
+]
+
+[project.urls]
+Repository = "https://github.com/0sophy1/rodeo-ness"
+
+[tool.setuptools.packages.find]
+include = ["rodeo_ness*"]
