@@ -20,7 +20,8 @@ filtering is cheaper than the phase-estimation realization — and the Rodeo
 advantage grows with `g`.
 
 ---
-
+## Contributors and maintainers
+[Soyoung Shin](@0sophy1), [Hyunjun Yeo](), [Haeum Kim](@HaEumKim)
 ## Repository structure
 
 ```
