@@ -21,7 +21,7 @@ advantage grows with `g`.
 
 ---
 ## Contributors and maintainers
-[Soyoung Shin](@0sophy1), [Hyunjun Yeo](), [Haeum Kim](@HaEumKim)
+[Soyoung Shin](https://github.com/0sophy1)), [Hyunjun Yeo](), [Haeum Kim](https://github.com/HaEumKim)
 ## Repository structure
 
 ```
